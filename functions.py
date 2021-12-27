@@ -14,6 +14,8 @@ def get_args() -> object:
 
 
 # This function takes in a namespace object, and returns a cookie log filename
+
+
 def get_cookie_filename(args: object) -> str:
     return args.filename
 
@@ -24,3 +26,7 @@ def get_search_date(args: object) -> str:
     if args.date:
         return args.date
     print("Please enter a date, so that i may find the most active cookies")
+    return False
+
+
+def read_cookie_log(filename):
