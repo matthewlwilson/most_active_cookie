@@ -1,5 +1,5 @@
 import argparse
-
+import cookie_class
 # This function reads and parses cli-commands, returns namespace about a cookie filename and possibly a date
 
 
