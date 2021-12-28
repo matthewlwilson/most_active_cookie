@@ -76,4 +76,4 @@ def test_sort_most_active_cookie():
                       "5UAVanZf6UtGyKVS", "AtY0laUfhglK3lC7"]
     expectedOutcome = ["AtY0laUfhglK3lC7",
                        "SAZuXPGUrfbcn5UA", "5UAVanZf6UtGyKVS"]
-    assert functions.sort_most_active(fakeCookieArry)
+    assert functions.sort_most_active(fakeCookieArry) == expectedOutcome
