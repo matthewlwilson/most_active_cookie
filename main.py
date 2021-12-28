@@ -9,6 +9,7 @@ def main():
     newArry = functions.get_all_cookies_for_selected_date(
         dateToSearch, arryOfCookies)
     mostActiveCookies = functions.sort_most_active(newArry)
+    functions.display_most_active(mostActiveCookies)
 
 
 if __name__ == '__main__':

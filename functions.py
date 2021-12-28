@@ -59,6 +59,8 @@ def get_all_cookies_for_selected_date(date, cookieArray):
     for cookie in cookieArray:
         if cookie.date == date:
             newArry.append(cookie.id)
+    if newArry == []:
+        print("No cookies found from that given date")
     return newArry
 
 
@@ -72,3 +74,11 @@ def sort_most_active(cookieArry):
     noDups = []
     [noDups.append(cookieId) for cookieId in res if cookieId not in noDups]
     return noDups
+
+
+"""This function displays the most active cookies to the command line"""
+
+
+def display_most_active(sortedCookieArry):
+    for cookie in sortedCookieArry:
+        print(cookie)
